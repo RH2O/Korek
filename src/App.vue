@@ -23,7 +23,7 @@ const toggleDark = useToggle(isDark);
     </div>
   </header>
 
-  <RouterView />
+  <RouterView :key="$route.fullPath"/>
 </template>
 
 <style scoped>

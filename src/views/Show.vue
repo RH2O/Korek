@@ -36,9 +36,11 @@
     <div class="borders px-2">
       <span>Border Countries:</span>
        <ul>
-        <a v-for="bord in borders" :href="`/countries/${bord.cca3}`">
-          <li>{{bord.name.common}}</li>
-        </a>
+        <RouterLink v-for="(bord,i) in borders" :key="`border_${i}_${$route.fullPath}`" :to="`/countries/${bord.cca3}`">
+          <li>
+            {{ bord.name.common}}
+          </li>
+        </RouterLink>
        </ul>
     </div>
   </div>
@@ -101,6 +103,13 @@ export default {
     created() {
         this.fetchData();
     },
+
+    watch: {
+    $route(to, from) {
+      // Force re-render when the route changes
+      this.$forceUpdate();
+    },
+  },
 }
 </script>
 
