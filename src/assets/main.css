@@ -1,0 +1,135 @@
+/* @import './base.css'; */
+/* @import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap'); */
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: hsl(200, 15%, 8%);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: hsl(200, 15%, 8%);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: hsl(200, 15%, 8%);
+}
+
+
+
+.dark ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: hsl(0, 0%, 100%);
+  opacity: 1; /* Firefox */
+}
+
+.dark :-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: hsl(0, 0%, 100%);
+}
+
+.dark ::-ms-input-placeholder { /* Microsoft Edge */
+  color: hsl(0, 0%, 100%);
+}
+
+
+html{
+
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(200, 15%, 8%);
+  /* font-family: sans-serif; */
+
+}
+
+.dark{
+  background-color: hsl(207, 26%, 17%);
+  color: hsl(0, 0%, 100%);
+
+}
+
+*{
+  color: hsl(200, 15%, 8%);
+  font-family: 'Nunito' , sans-serif;
+  
+}
+
+.dark *{
+ color:hsl(0, 0%, 100%);
+}
+
+body{
+  background-color: hsl(0, 0%, 98%);
+}
+
+.dark body{
+  background-color: hsl(207, 26%, 17%);
+  color: hsl(0, 0%, 100%);
+
+}
+
+.card{
+  border: none;
+  margin: auto;
+}
+
+.element{
+  background-color: hsl(0, 0%, 100%);
+  border: none;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,-0.76);
+}
+
+ul li{
+  background-color: hsl(0, 0%, 100%);
+  border: none;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,-0.76);
+  list-style-type: none;
+}
+
+.dark ul li {
+  background-color: hsl(209, 23%, 22%);
+  color:hsl(0, 0%, 100%);
+}
+
+.dark .element{
+  background-color: hsl(209, 23%, 22%);
+  color:hsl(0, 0%, 100%);
+}
+
+
+
+.dark a{
+  color:hsl(0, 0%, 100%); 
+}
+
+.dark a:hover {
+  color:hsl(0, 0%, 100%); 
+}
+
+.dark a:visited {
+  color:hsl(0, 0%, 100%); 
+}
+
+
+input{
+  background-color:  hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 52%);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,-0.76);
+}
+
+a{
+  text-decoration: none;
+}
+
+.dark input{
+  background-color: hsl(209, 23%, 22%);
+}
+
+
+
+.dark .search-icon{
+  color:hsl(0, 0%, 100%);   
+}
+
+
+p span{
+  font-weight: 600;
+  text-transform: capitalize;
+}
